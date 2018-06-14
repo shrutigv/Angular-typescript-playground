@@ -1,0 +1,17 @@
+<p>{{itemType}}</p>
+<ul class="list-inline" >
+	<li class="list-group-item d-inline-block" *ngFor="let item of itemsList" >
+
+		<a class="d-inline-block">
+			
+				<img height="210" width="210" [src]="item.imgSrc" >
+				<p class="">{{item.price}}
+					
+				</p>
+				<p class="description">{{item.description}}</p>
+				<button (click)= addCart(item)>Add to cart</button>
+
+			
+		</a>
+	</li>
+</ul>
