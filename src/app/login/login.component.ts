@@ -9,18 +9,12 @@ import { User } from '../item-type';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-	private signupForm: FormGroup;
 	private user: User ;
   	constructor(private router:Router) { 
-  		this.signupForm = new FormGroup ({
-    		emailId:new FormControl(),  
-    		userpassword:new FormControl()
-  		});
   	}
 	ngOnInit() {}
 
   onSubmit() {
-   
     this.router.navigate(['home'])
 	}
 }
