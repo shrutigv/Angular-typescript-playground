@@ -9,6 +9,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ContentComponent } from './content/content.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 import { ItemService} from './item.service';
 import {LocalStorageService} from './local-storage.service';
 
@@ -16,6 +17,7 @@ import {LocalStorageService} from './local-storage.service';
 
 const appRoutes: Routes = [
    {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path:'login', component: LoginComponent},
   {path: 'cart', component: ShoppingComponent},
   {path: 'home', component: HomeComponent},
   {path: '**', component: HomeComponent}
@@ -32,6 +34,7 @@ const appRoutes: Routes = [
     ContentComponent,
     ShoppingComponent,
     HomeComponent,
+    LoginComponent
     
   ],
   imports: [
