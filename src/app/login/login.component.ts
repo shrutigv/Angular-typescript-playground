@@ -19,8 +19,8 @@ export class LoginComponent implements OnInit {
   	}
 	ngOnInit() {}
 
-  onFormSubmit(signupForm:NgForm) {
-    this.user=this.signupForm.value;
+  onSubmit() {
+   
     this.router.navigate(['home'])
 	}
 }
